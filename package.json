@@ -9,7 +9,8 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"run:db": "docker compose --profile db -f docker-compose.dev.yml up -d"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
